@@ -42,7 +42,7 @@ if(isset($_POST['save']))
 if ($result->num_rows > 0) {
   // output data of each row
   while($row = $result->fetch_assoc()) {
-    echo "NIF/NIE: " . $row["NIF"]. " - Nom: " . $row["Nom"]. " " . $row["Cognom"]. "<br>";
+    echo "NIF/NIE: " . $row["NIF"]. " - Nom i Cognom: " . $row["Nom"]. " " . $row["Cognom"]. "<br>";
   }
 } else {
   echo "0 results";
